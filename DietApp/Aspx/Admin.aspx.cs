@@ -19,6 +19,7 @@ namespace DietApp
 			Repeater2.DataSource = dr;
 			Repeater2.DataBind();
 			bgl.baglanti().Close();
+
 			SqlCommand sil = new SqlCommand("DELETE FROM Kullanicilar WHERE KullaniciID=@p1",bgl.baglanti());
 			diyetisyen.KullaniciID = Convert.ToInt32(Request.QueryString["KullaniciID"]);
 			sil.Parameters.AddWithValue("@p1", diyetisyen.KullaniciID);

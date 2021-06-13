@@ -31,12 +31,10 @@ namespace DietApp
 
 				if (kullanici.KullaniciRol == "Diyetisyen")
 				{
-					Response.Write("Diyetisyen girişi");
 					Response.Redirect("Hastalar.aspx");
 				}
 				else if (kullanici.KullaniciRol == "Admin")
 				{
-					Response.Write("Admin girişi");
 					Response.Redirect("Admin.aspx");
 				}
 			}
